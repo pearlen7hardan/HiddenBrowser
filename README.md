@@ -165,6 +165,27 @@ launch your first profile.
 
 ---
 
+## Security & VirusTotal
+
+The builds are **not code-signed** (no Apple Developer ID or Windows Authenticode
+certificate), so macOS Gatekeeper and Windows SmartScreen warn on first launch —
+that's a warning about an **unknown publisher**, not about what's inside the file.
+Every release is scanned on VirusTotal so you can verify it yourself:
+
+- **macOS (`.dmg`)** — [VirusTotal report](https://www.virustotal.com/gui/file/2c36c19c5904caab945cbd447d4dd3f5bb97d3b88bffc6f30ddd387f58f64fa4)
+- **Windows (`.msi`)** — [VirusTotal report](https://www.virustotal.com/gui/file/948a71cb2d9de5c981d5a16682e0e278eb2fcd595b83de0f5026c6f44a544ab9)
+- **Windows (`.exe`)** — [VirusTotal report](https://www.virustotal.com/gui/file/a1660357b2200c3a9e68086258db287b0d16cca0f0ada41d86912e139677a599)
+
+**About the "potentially unwanted" flag.** A few antivirus engines heuristically
+tag anti-detect / fingerprint / browser-automation tools as **PUA — a Potentially
+Unwanted Application**. That's a *category* label, not detected malware: the app
+routes traffic through proxies and modifies browser fingerprints, which matches
+those engines' generic heuristics, and an unsigned build from a new, unknown
+publisher makes them extra cautious. It does nothing malicious — open the reports
+above and judge for yourself.
+
+---
+
 ## Usage
 
 Four interchangeable ways to drive HiddenBrowser — all read from the same on-disk
