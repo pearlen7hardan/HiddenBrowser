@@ -241,5 +241,5 @@ scraping, multi-accounting and integration with the automation API are fine.
 
 ## Links
 
-- **Site** — [HiddenBrowser](https://pearlen7hardan.github.io/HiddenBrowser/)
+- **Site** — [HiddenBrowser](https://hiddenbrowser.org)
 - **Docs** — [docs](https://pearlen7hardan.github.io/HiddenBrowser/docs.html)
